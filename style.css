@@ -1,89 +1,112 @@
 
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Passion+One:wght@400;700;900&family=Russo+One&family=Shrikhand&family=Staatliches&display=swap');
+
 body{ /* body selecciona el cuerpo general y lo pinta */
-	background-color: skyblue; /* https://www.w3schools.com/colors/colors_names.asp */  
-	font-family: 'Open Sans', sans-serif;
+	background-color: #F1EED9; /* https://www.w3schools.com/colors/colors_names.asp */  
+	
 			}
 
-#introduccion{/* selecciona el div y lo pinta */
+
+
+#introduccion{
 	width: 900px;
 	padding: 20px 0px;
-	margin: 0px;
-	background: purple;
-	margin: 0 auto; /* centrar elementos dentro de este div */
-	float: center;  /* otras opciones son left, right */
+	margin: 400px;
+	font-family: 'Russo One', sans-serif; 
+	position: absolute;
+	text-align: right;
+
+	
+}
+::-webkit-scrollbar {
+  width: 20px;
 }
 
-#contenedor{/* selecciona el div y lo pinta */
-	width: 900px; 
-	padding: 20px 0px;
-	margin: 0px;
-	background: gray;
-	margin: 0 auto; /* centrar elementos dentro de este div */
-	float: center;  /* otras opciones son left, right */
+/* Track */
+::-webkit-scrollbar-track {
+ 
+ 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: black; 
+ 
 }
 
-div{/* selecciona el div y lo pinta */
-	width: 820px; 
-	padding: 20px;
-	margin: 20px 20px;
-	background: white;
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
 }
-#desarrollo{/* selecciona el id y lo pinta */
-	background-color: orange;
-	}
+/* Referencia scroll bar es https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_scrollbar2*/
+#menu{ 
+transform: translate(-20px,-30px);
+width:150px ;
+background-color:black;
+font-family: ;
+list-style: none;
+margin-top: 0px;
+padding-top: 300px;
+padding-block: 300px;
+text-align: center;
+position: absolute;
+font-family: 'Staatliches', cursive;
 
-h1{/* selecciona el header o titulo 1 y lo pinta */
-	background-color: pink;
-	width: 100%;
-	padding: 0px;
-	margin: 20px 0px;
-	border: 0px solid blue;
-	font-size: 28px;
-	color: hotpink;
-	text-align: center;
-	font-family: 'Merriweather', serif;
-	}
-
-h2 {/* selecciona el header o titulo 3 y lo pinta */
-	background: pink;
-	font-size: 20px;
-	color: navy;
-	font-family: 'Merriweather', serif;
-	text-align: center;
-	}
-
-h3 {
-	font-family: 'Merriweather', serif;
 }
 
-p {/* selecciona el parrafo y lo pinta */
-	background-color: white;
-	width: 100%;
-	padding: 10px;
-	font-size: 18px;
-	}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  text-decoration-style: none;
 
-img{/* selecciona las imagenes y las formatea */
-	border: 0px solid gray;
-	width: 100%;
-	}
+}
 
+li a {
+  display: block;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  padding: 50px;
+}
+
+/* Change the link color on hover */
+li a:hover {
+  background-color: #70D3A9;
+  color: white;
+  width: 150px;
+  
+}
+
+h1{
+	color:#A3002C;
+	font-size: 100px;
+
+}
 
 .info-footer {
-  display: flex;
+	text-align: center;
   width: 100%;
-  background-color: #002a38;
+  height: 300px;
   line-height: 1.3;
-  font-family: Menlo, monospace;
+  font-family: 'Staatliches', cursive;
+  background: black;
+  position: absolute;
+  margin-top: 900px;
+  margin-bottom: 0px;
+  transform: translate(-10px);
 }
 
 .lista-footer {
+	height: 100%;
   display: inline-grid;
   grid-template-columns: auto auto auto auto auto auto;
   grid-auto-flow: row;
   grid-gap: 24px;
   justify-items: center;
   margin: auto;
+
 }
 
 a{
